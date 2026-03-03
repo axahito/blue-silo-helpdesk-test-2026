@@ -166,6 +166,3 @@ This will populate development users and can be customized.
 
 - The `/api/auth/seed` endpoint and seed scripts are intended for development only — remove or secure before production.
 - Tests: this repo includes unit and Jest-only acceptance tests for both server and client. Run them with `npm test` in each folder.
-- If you need CI, add a workflow to run `npm ci && npm test` for `server` and `client`.
-
-Feel free to ask me to commit these README changes or to add CI/workflow files.
