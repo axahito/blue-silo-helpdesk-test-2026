@@ -1,0 +1,37 @@
+# Node
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+client/dist/
+server/dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env
+.env
+
+# IDE
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+coverage/
+*.tgz
+
+# Local npm caches
+.npm
+
+# Lockfiles (keep if you want reproducible installs)
+# package-lock.json
+

@@ -1,0 +1,41 @@
+{
+  "project_name": "Helpdesk Ticket Maintenance System 2026",
+  "version": "1.0.0",
+  "acceptance_criteria": [
+    {
+      "id": "AC-01",
+      "category": "Authentication & Authorization",
+      "requirement": "The system must implement role-based access control (RBAC) using JWT or sessions for Helpdesk Agent (L1), Technical Support (L2), and Advanced Support (L3) roles[cite: 5, 11, 43]."
+    },
+    {
+      "id": "AC-02",
+      "category": "L1 Functionality",
+      "requirement": "L1 Agents must be able to create tickets including Title, Description, Category, Expected Completion Date/Time, and Priority (Low, Medium, High)[cite: 16, 17, 18, 19, 20, 21]."
+    },
+    {
+      "id": "AC-03",
+      "category": "L1 Functionality",
+      "requirement": "L1 Agents must be able to update ticket status to 'New', 'Attending', or 'Completed' and escalate to L2 if unresolved[cite: 22, 23]."
+    },
+    {
+      "id": "AC-04",
+      "category": "L2 Functionality",
+      "requirement": "L2 Technical Support must be able to view escalated tickets and assign Critical Values: C1 (High/System down), C2 (Medium/Partial issue), or C3 (Low/Minor)[cite: 25, 26, 27, 28, 29, 30]."
+    },
+    {
+      "id": "AC-05",
+      "category": "L2 Functionality",
+      "requirement": "L2 users must be able to add actions, update ticket logs, and escalate to L3 if unresolved[cite: 31, 32, 39]."
+    },
+    {
+      "id": "AC-06",
+      "category": "L3 Functionality",
+      "requirement": "L3 Advanced Support must handle only escalated critical (C1-C2) tickets, provide a resolution, and close the ticket[cite: 33, 34, 35, 40]."
+    },
+    {
+      "id": "AC-07",
+      "category": "UI/UX",
+      "requirement": "The interface must include a ticket list with filters for status, priority, and escalation, as well as a detail view showing ticket history and logs[cite: 44, 45, 48, 49]."
+    }
+  ]
+}

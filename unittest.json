@@ -1,0 +1,48 @@
+{
+  "unit_tests": {
+    "backend_tests": [
+      {
+        "test_id": "UT-BE-01",
+        "component": "Auth Middleware",
+        "description": "Verify that a valid JWT token allows access to protected RESTful endpoints[cite: 11, 12]."
+      },
+      {
+        "test_id": "UT-BE-02",
+        "component": "Ticket Controller",
+        "description": "Verify that a ticket is successfully saved to MongoDB with all mandatory L1 fields[cite: 10, 16, 21]."
+      },
+      {
+        "test_id": "UT-BE-03",
+        "component": "Escalation Logic",
+        "description": "Ensure an L3 user can only fetch tickets with Critical Values C1 or C2[cite: 34]."
+      },
+      {
+        "test_id": "UT-BE-04",
+        "component": "Status Updates",
+        "description": "Verify that every status change creates a corresponding entry in the ticket log[cite: 31, 48]."
+      }
+    ],
+    "frontend_tests": [
+      {
+        "test_id": "UT-FE-01",
+        "component": "Ticket Form (React)",
+        "description": "Test that the form validates required fields (Title, Priority) before submission[cite: 7, 17, 21]."
+      },
+      {
+        "test_id": "UT-FE-02",
+        "component": "Role-Based UI",
+        "description": "Verify that the 'Assign Critical Value' UI element is only visible to users with the L2 role[cite: 26, 43]."
+      },
+      {
+        "test_id": "UT-FE-03",
+        "component": "Ticket Filter (Tailwind)",
+        "description": "Ensure the ticket list correctly filters by 'Priority' when the user selects a filter option[cite: 4, 44]."
+      },
+      {
+        "test_id": "UT-FE-04",
+        "component": "Escalation Note",
+        "description": "Verify that the 'Escalate' function captures and displays accompanying notes in the detail view[cite: 45, 46]."
+      }
+    ]
+  }
+}
